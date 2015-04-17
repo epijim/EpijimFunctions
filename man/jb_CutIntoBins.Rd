@@ -4,9 +4,14 @@
 \alias{jb_CutIntoBins}
 \title{Make sparklines from a variable}
 \usage{
-jb_CutIntoBins(variable, bins = 10, width = 6)
+jb_CutIntoBins(variable, time = "potato", name = "line", bins = 10,
+  width = 6)
 }
 \arguments{
+\item{time}{This is the x axis. If only one variable is given, this isn't needed.}
+
+\item{name}{The name to give this sparkline. I define as a command to keep the main text where you insert it tidy.}
+
 \item{bins}{Number of bins or bars in the histogram. Defaults to 10.}
 
 \item{width}{The width of the histogram. Defaults to 6.}
