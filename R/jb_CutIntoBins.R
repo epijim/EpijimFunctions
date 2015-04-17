@@ -32,7 +32,7 @@ jb_CutIntoBins <- function(variable,time="potato",name="line",bins=10,width=6){
         },error=function(e){})
     }
     # Make sparkline
-    binlocations <- seq(0,1,length=10)
+    binlocations <- seq(0,1,length=bins)
     middle<-NA
     for(i in 1:nrow(temp_data)){
       ifelse(is.na(temp_data[i,2]),
@@ -61,15 +61,16 @@ jb_CutIntoBins <- function(variable,time="potato",name="line",bins=10,width=6){
           temp_output[i,2] <- temp_data[temp_data$group==i,2]
         },error=function(e){})
     }
-    middle <- c("\\spark",
-                paste0("   ",temp_output$value)
+    temp_output$datalocations <- seq(0,1,length=bins)
+    middle <- c(" \\spark",
+                paste0("   ",temp_output$datalocations,"   ",temp_output$value)
     )
   }
 ################### OUTPUT
   opening <- paste0("\\newcommand{\\spark",
                     name,"}{\\begin{sparkline}{",
                     width,"}")
-  close <- "\\end{sparkline}}"
+  close <- "/ \\end{sparkline}}"
   output <- c(opening,middle,close)
-  cat(output,sep=" \n")
+  cat(output,sep="\n")
 }
