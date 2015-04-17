@@ -16,7 +16,7 @@ auto-generate the documentation for the function (see head of existing functions
 
 ```
 directory <- "~/funwithcode_local/code_snippets/EpijimFunctions"
-setwd("directory")
+setwd(directory)
 ```
 
 Put function (r script) in `/R/` with name of file as name of function.
