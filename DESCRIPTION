@@ -1,0 +1,8 @@
+Package: EpijimFunctions
+Title: Useful functions for James Black
+Version: 0.0.0.9000
+Authors@R: person("James", "Black", , "james.black@cantab.net", role = c("aut", "cre"))
+Description: Functions I find useful
+Depends: R (>= 3.1.3)
+License: You are free to improve, but please link to epijim.uk if you heavily copy.
+LazyData: true
