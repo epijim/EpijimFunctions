@@ -11,19 +11,17 @@ jb_ploteq5d(data, bullet = F)
 
 jb_ploteq5d()}
 
-\item{data:}{data.frame with
-                    measure  : label of what's being measured
-                    unit     : label of units of the measure
-                    high     : the high value for the measure
-                    second_cut     : the mean value for the measure
-                    first_cut  : the first_cut value for the measure
-                    target   : the target value for the measure
-                    value    : the actual value of the measure}
+\item{data:}{data.frame that is produced by rbinding runs of jb_geteq5dvalues
+                    bar  : number of bar values are from
+                    eq_index     : eq5d index score
+                    impaired_domains     : number of domains listed as impaired}
 }
 \description{
 bulleteq5d: Vertical Bullet Graph
 }
 \author{
 James Black - a ggplot take on the bullet plots by Simon Müller
+
+ ""              ""         "" ""            "timepoints"
 }
 

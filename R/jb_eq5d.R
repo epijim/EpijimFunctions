@@ -54,14 +54,11 @@ jb_geteq5dvalues <- function(barorder,
 #'  
 #'  @author James Black - a ggplot take on the bullet plots by Simon Müller
 #'  
-#'  @param data:  data.frame with
-#'                     measure  : label of what's being measured
-#'                     unit     : label of units of the measure
-#'                     high     : the high value for the measure
-#'                     second_cut     : the mean value for the measure
-#'                     first_cut  : the first_cut value for the measure
-#'                     target   : the target value for the measure
-#'                     value    : the actual value of the measure
+#'  ""              ""         "" ""            "timepoints" 
+#'  @param data:  data.frame that is produced by rbinding runs of jb_geteq5dvalues
+#'                     bar  : number of bar values are from
+#'                     eq_index     : eq5d index score
+#'                     impaired_domains     : number of domains listed as impaired
 #'                     
 #'  @param bullet TRUE for bullet style plot with mean and median inspired by Muller's work, or FALSE for violin plots.
 #'      
