@@ -2,3 +2,5 @@
 
 export(jb_CutIntoBins)
 export(jb_load)
+export(jb_multihists)
+export(jb_summaryby)

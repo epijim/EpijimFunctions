@@ -10,10 +10,10 @@ jb_load(package)
 \item{name}{The name of the package.}
 }
 \description{
-Automatically install missing packages
+Packager loader that will automatically install missing packages
 }
 \examples{
-jb_load()
+jb_load(ggplot2)
 }
 \keyword{packages}
 

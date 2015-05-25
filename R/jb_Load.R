@@ -1,11 +1,11 @@
 #' Automatically install missing packages
 #'
-#' Automatically install missing packages
+#' Packager loader that will automatically install missing packages
 #' @param name The name of the package.
 #' @keywords packages
 #' @export
 #' @examples
-#' jb_load()
+#' jb_load(ggplot2)
 
 jb_load <- function(package) { 
   package <- as.character(substitute(package)) 
