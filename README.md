@@ -1,6 +1,11 @@
 # EpijimFunctions
 My R functions, based off advice from here http://hilaryparker.com/2014/04/29/writing-an-r-package-from-scratch/
 
+
+## How to install the package
+
+Load from github with `install_github('epijim/EpiJimFunctions')`.
+
 ## Updating (for me)
 
 #### Packages
@@ -26,7 +31,3 @@ document() # Make documentation
 setwd("..") # Go back one
 install("EpijimFunctions") # Install package
 ```
-
-#### Load via online repo
-
-Load from github with `install_github('epijim/EpiJimFunctions')`.
