@@ -4,7 +4,6 @@
 \alias{jb_eq5dPlot}
 \title{jb_eq5dPlot: Vertical Bullet Graph
  
- @author James Black - a ggplot take on the bullet plots by Simon Müller
  
  @param data:  data.frame that is produced by rbinding runs of jb_geteq5dvalues
                     bar  : number of bar values are from
@@ -20,7 +19,6 @@ jb_eq5dPlot(data, bullet = F)
 \description{
 jb_eq5dPlot: Vertical Bullet Graph
  
- @author James Black - a ggplot take on the bullet plots by Simon Müller
  
  @param data:  data.frame that is produced by rbinding runs of jb_geteq5dvalues
                     bar  : number of bar values are from

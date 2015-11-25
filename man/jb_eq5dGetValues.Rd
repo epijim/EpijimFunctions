@@ -4,7 +4,6 @@
 \alias{jb_eq5dGetValues}
 \title{jb_eq5dGetValues: Get summary stats from EQ-5D
  
- @author James Black
  @param barorder Numeric 1 to whatever. For which bar (or timepoint)  this set of EQ-5D measurements will be on the plot.
  @param eq_index The main EQ-5D index score. 
  @param domain_one Any of the five eq domains - order doesn't matter
@@ -21,7 +20,6 @@ jb_eq5dGetValues(barorder, eq_index, domain_one, domain_two, domain_three,
 \description{
 jb_eq5dGetValues: Get summary stats from EQ-5D
  
- @author James Black
  @param barorder Numeric 1 to whatever. For which bar (or timepoint)  this set of EQ-5D measurements will be on the plot.
  @param eq_index The main EQ-5D index score. 
  @param domain_one Any of the five eq domains - order doesn't matter
