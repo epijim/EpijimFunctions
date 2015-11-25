@@ -1,4 +1,4 @@
-#' Tufte Maximal Data, Minimal Ink Theme
+#' Tufte Maximal Data, Minimal Ink Theme (taken from ggthemes)
 #'
 #' Theme based on Chapter 6 'Data-Ink Maximization and Graphical
 #' Design' of Edward Tufte *The Visual Display of Quantitative
@@ -25,24 +25,24 @@
 #' # with ticks and range frames
 #' (ggplot(mtcars, aes(wt, mpg))
 #'  + geom_point() + geom_rangeframe()
-#'  + theme_tufte())
+#'  + jb_ThemeTufte())
 #' # with geom_rug
 #' (ggplot(mtcars, aes(wt, mpg))
 #'  + geom_point() + geom_rug()
-#'  + theme_tufte(ticks=FALSE))
+#'  + jb_ThemeTufte(ticks=FALSE))
 #' \dontrun{
 #' ## Using the Bembo serif family
 #' library(extrafont)
 #' (ggplot(mtcars, aes(wt, mpg))
 #'  + geom_point() + geom_rangeframe()
-#'  + theme_tufte(base_family='BemboStd'))
+#'  + jb_ThemeTufte(base_family='BemboStd'))
 #' ## Using the Gill Sans sans serif family
 #' (ggplot(mtcars, aes(wt, mpg))
 #'  + geom_point() + geom_rangeframe()
-#'  + theme_tufte(base_family='GillSans'))
+#'  + jb_ThemeTufte(base_family='GillSans'))
 #' }
 #' @export
-jb_theme_tufte <- function(base_size = 11, base_family = "serif", ticks = TRUE) {
+jb_ThemeTufte <- function(base_size = 11, base_family = "serif", ticks = TRUE) {
   ## TODO: start with theme_minimal
   ret <- theme_bw(base_family = base_family, 
                   base_size = base_size) + 
