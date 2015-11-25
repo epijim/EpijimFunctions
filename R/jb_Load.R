@@ -17,7 +17,8 @@ jb_load <- function(package) {
     )
   } else { 
     update.packages() 
-    eval(parse(text=paste("install.packages('", package, "')", sep=""))) 
+    eval(parse(text=paste("install.packages('", package, "')", sep="")))
+    eval(parse(text=paste("library(", package, ")", sep=""))) 
     print(paste0(
       "Uhoh, ",package, "was missing so it has been installed")
     )
