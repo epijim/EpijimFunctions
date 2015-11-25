@@ -8,12 +8,11 @@ Load from github with `install_github('epijim/EpiJimFunctions')`.
 
 ## Updating (for me)
 
-#### Packages
+#### Get required packages
 ```
 install.packages("devtools")
 library("devtools")
 devtools::install_github("klutometis/roxygen")
-library(roxygen2)
 ```
 #### Update
 At the top of the R script with the function, add in the variables for `roxygen2` so that it will 
@@ -27,7 +26,14 @@ setwd(directory)
 Put function (r script) in `/R/` with name of file as name of function.
 
 ```
-document() # Make documentation
-setwd("..") # Go back one
-install("EpijimFunctions") # Install package
+library(roxygen2)
+
+roxygen2::roxygenise()
+# devtools::document() # alternative way to fire up roxy
+```
+
+Package is now updated! Push to github then install as per below.
+
+```
+devtools::install_github("epijim/EpijimFunctions") # Install package
 ```
