@@ -35,5 +35,9 @@ roxygen2::roxygenise()
 Package is now updated! Push to github then install as per below.
 
 ```
-devtools::install_github("epijim/EpijimFunctions") # Install package
+# Install locally (if starting inside package dir)
+  setwd("..")
+  install("EpijimFunctions")
+# Install from github
+  devtools::install_github("epijim/EpijimFunctions") # Install package
 ```
