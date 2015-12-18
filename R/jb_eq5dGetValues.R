@@ -1,14 +1,15 @@
-#'  jb_eq5dGetValues: Get summary stats from EQ-5D
-#'  
+#'  Get summary stats from EQ-5D
+#'
+#'  Prepares EQ-5D data for my EQ plotting function.
 #'  @param barorder Numeric 1 to whatever. For which bar (or timepoint)  this set of EQ-5D measurements will be on the plot.
-#'  @param eq_index The main EQ-5D index score. 
+#'  @param eq_index The main EQ-5D index score.
 #'  @param domain_one Any of the five eq domains - order doesn't matter
 #'  @param domain_two Any of the five eq domains - order doesn't matter
 #'  @param domain_three Any of the five eq domains - order doesn't matter
 #'  @param domain_four Any of the five eq domains - order doesn't matter
 #'  @param domain_five Any of the five eq domains - order doesn't matter
 #'  @examples
-#'  "See epijim.uk"                                                                                                                                             
+#'  "See epijim.uk"
 
 jb_eq5dGetValues <- function(barorder,
                              eq_index,

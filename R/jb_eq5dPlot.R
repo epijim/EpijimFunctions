@@ -1,13 +1,12 @@
-#'  jb_eq5dPlot: Vertical Bullet Graph
-#'  
-#'  
+#'  Vertical Bullet Graph
+#'
+#'  Plot the EQ5D.
 #'  @param data:  data.frame that is produced by rbinding runs of jb_geteq5dvalues
 #'                     bar  : number of bar values are from
 #'                     eq_index     : eq5d index score
 #'                     impaired_domains     : number of domains listed as impaired
-#'                     
 #'  @param bullet TRUE for bullet style plot with mean and median inspired by Muller's work, or FALSE for violin plots.
-#'      
+#' @examples
 #' jb_eq5dPlot()
 
 jb_eq5dPlot <- function(data,bullet=F){
@@ -31,13 +30,13 @@ jb_eq5dPlot <- function(data,bullet=F){
     timepoint_label <- c(timepoint_label,paste0("Timepoint ",i))
   }
   levels(data$timepoints) <- timepoint_label
-  
-  data_means <- ddply(data, "timepoints", summarise, 
+
+  data_means <- ddply(data, "timepoints", summarise,
                       mean = mean(eq_index),
                       median = median(eq_index))
-  
+
   ifelse(isTRUE(bullet),
-         plot <-   ggplot(data) + 
+         plot <-   ggplot(data) +
            geom_bar(data=data,
                     aes(x=timepoints,
                         fill=factor(order)),
@@ -59,8 +58,8 @@ jb_eq5dPlot <- function(data,bullet=F){
            scale_x_discrete(name="")+
            theme_bw()
          ,
-         
-         plot <- ggplot(data) + 
+
+         plot <- ggplot(data) +
            geom_bar(aes(x=timepoints,
                         fill=factor(order)),
                     position="fill")+

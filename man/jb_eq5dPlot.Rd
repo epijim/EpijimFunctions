@@ -2,31 +2,19 @@
 % Please edit documentation in R/jb_eq5dPlot.R
 \name{jb_eq5dPlot}
 \alias{jb_eq5dPlot}
-\title{jb_eq5dPlot: Vertical Bullet Graph
- 
- 
- @param data:  data.frame that is produced by rbinding runs of jb_geteq5dvalues
-                    bar  : number of bar values are from
-                    eq_index     : eq5d index score
-                    impaired_domains     : number of domains listed as impaired
-                    
- @param bullet TRUE for bullet style plot with mean and median inspired by Muller's work, or FALSE for violin plots.
-     
-jb_eq5dPlot()}
+\title{Vertical Bullet Graph}
 \usage{
 jb_eq5dPlot(data, bullet = F)
 }
 \description{
-jb_eq5dPlot: Vertical Bullet Graph
- 
- 
+Plot the EQ5D.
  @param data:  data.frame that is produced by rbinding runs of jb_geteq5dvalues
                     bar  : number of bar values are from
                     eq_index     : eq5d index score
                     impaired_domains     : number of domains listed as impaired
-                    
  @param bullet TRUE for bullet style plot with mean and median inspired by Muller's work, or FALSE for violin plots.
-     
+}
+\examples{
 jb_eq5dPlot()
 }
 
